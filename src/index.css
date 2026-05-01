@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #1f108e;
+  --color-primary-container: #3730a3;
+  --color-on-primary: #ffffff;
+  
+  --color-surface: #fcf8ff;
+  --color-on-surface: #1b1b22;
+  --color-on-surface-variant: #464553;
+  
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f2fc;
+  --color-surface-container: #f0ecf6;
+  --color-surface-container-high: #eae6f1;
+  --color-surface-container-highest: #e4e1eb;
+  
+  --color-outline: #777584;
+  --color-outline-variant: #c8c4d5;
+  
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  --spacing-gutter: 24px;
+  --spacing-margin: 32px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+}
+
+@layer components {
+  .login-card-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+}
